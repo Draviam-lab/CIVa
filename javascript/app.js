@@ -41,7 +41,7 @@ d3.csv("data/civ_data.csv").then(function (data)
             console.log(filteredChromsGene);
             console.log(filteredChromsGene.length);
             if (filteredChromsGene.length === 0) {
-                d3.select("p").classed('noresults', true).html("<strong>No record to match this symbol. Please contact to add this to the database!</strong>")
+                d3.select("p").classed('noresults', true).html("<strong>No record to match this gene symbol. Please contact to add this to the database</strong>")
             }
             for (var k = 0; k < filteredChromsGene.length; k++) {
                 d3.select("tbody").insert("tr").html(
@@ -69,7 +69,7 @@ d3.csv("data/civ_data.csv").then(function (data)
             console.log(filteredUniprot);
             console.log(filteredUniprot.length);
             if (filteredUniprot.length === 0){
-                d3.select("p").classed('noresults', true).html("<strong>No record to match this uniprot id. Please contact to add this to the database!</strong>")
+                d3.select("p").classed('noresults', true).html("<strong>No record to match this uniprot id. Please contact to add this to the database</strong>")
             }
             for (var i = 0; i < filteredUniprot.length; i++) {
                 d3.select("tbody").insert("tr").html(
