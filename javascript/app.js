@@ -7,6 +7,8 @@ function ShowHideDiv() {
     d3.select("tbody").html("");
     d3.selectAll("p").classed('noresults', true).html("");
 }
+//reference for the function : https://levelup.gitconnected.com/building-a-simple-website-that-outputs-results-from-a-csv-using-users-input-bfcb782ced45
+
 d3.csv("data/civ_data.csv").then(function (data)
     {
 
@@ -36,10 +38,9 @@ d3.csv("data/civ_data.csv").then(function (data)
 
             var inputElementGene = d3.select("#user-input-gene");
             var inputValueGene = inputElementGene.property("value").toUpperCase().trim();
-            console.log(inputValueGene);
+            
             var filteredChromsGene = civ.filter(civ => civ.Gene_Symbol === inputValueGene); // checks datatype
-            console.log(filteredChromsGene);
-            console.log(filteredChromsGene.length);
+            
             if (filteredChromsGene.length === 0) {
                 d3.select("p").classed('noresults', true).html("<strong>No record to match this gene symbol. Please contact to add this to the database</strong>")
             }
@@ -64,10 +65,9 @@ d3.csv("data/civ_data.csv").then(function (data)
 
             var inputElementUniprot = d3.select("#user-input-uniprot");
             var inputValueUniprot = inputElementUniprot.property("value").toUpperCase().trim();
-            console.log(inputValueUniprot);
+            
             var filteredUniprot = civ.filter(civ => civ.Uniprot_ID===inputValueUniprot); // checks datatype
-            console.log(filteredUniprot);
-            console.log(filteredUniprot.length);
+           
             if (filteredUniprot.length === 0){
                 d3.select("p").classed('noresults', true).html("<strong>No record to match this uniprot id. Please contact to add this to the database</strong>")
             }
