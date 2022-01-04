@@ -48,8 +48,9 @@ and also iPads specifically.
 
 }
 #logo{
-    width:100px;
-    height:89px;
+    //width:100px;
+   // height:89px;
+    width: min(50vw, 100px);
     position: absolute;
     //float:left;
     top: 12pt;
