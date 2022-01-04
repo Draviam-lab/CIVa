@@ -15,9 +15,11 @@ d3.csv("data/civ_data.csv").then(function (data)
     {
 
         var civ = data;
-        var button = d3.select("#button");
+        var buttonG = d3.select("#buttonGene");
+        var buttonU = d3.select("#buttonUni");
         var form = d3.select("#form");
-        button.on("click", runEnter);
+        buttonG.on("click", runEnter);
+        buttonU.on("click", runEnter);
         form.on("submit", runEnter);
 // Defining the function
 
