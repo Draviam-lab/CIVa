@@ -60,4 +60,5 @@ img {
     width:auto;
     max-height:100%;
     display:block;
+    border:0;
 }
