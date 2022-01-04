@@ -49,9 +49,9 @@ and also iPads specifically.
 }
 #logo{
     width:100px;
-    height:100px;
+    height:89px;
     position: absolute;
-    top: 12pt;
-    left: 24pt;
+    
+
     background-image:url(images/CIVa_logo.jpg);
 }
