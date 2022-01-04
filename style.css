@@ -56,3 +56,8 @@ and also iPads specifically.
     top: 12pt;
     background-image:url(images/CIVa_Logo_black.jpg);
 }
+img {
+    width:auto;
+    max-height:100%;
+    display:block;
+}
