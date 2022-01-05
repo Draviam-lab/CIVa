@@ -65,7 +65,9 @@ img {
     outline: 0;
     box-shadow: none;
 }
-
+#project_tagline{
+text-align: justify;
+}
 @media only screen and (max-width: 480px){
 
 }
