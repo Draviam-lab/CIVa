@@ -50,11 +50,11 @@ and also iPads specifically.
 #logo{
     //width:100px;
    // height:89px;
-    width: min(50vw, 100px);
-    position: absolute;
+    //width: min(50vw, 100px);
+    //position: absolute;
     //float:left;
-    top: 12pt;
-    background-image:url(images/CIVa_Logo_black.jpg);
+   // top: 12pt;
+    //background-image:url(images/CIVa_Logo_black.jpg);
 }
 img {
     width:100%;
