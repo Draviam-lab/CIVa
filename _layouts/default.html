@@ -40,6 +40,13 @@
                         <h5>Genes and Health Database</h5>
                         <br>
                         <div class="col-sm-4 col-md-4">
+                            {% if site.github.is_project_page %}
+                            <p>CIVa Database maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+                            {% endif %}
+                            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+
+                        </div>
+                        <div class="col-sm-4 col-md-4">
 
 
                             <ul id="footer_ul">
@@ -67,14 +74,7 @@
 
 
                             </div>
-                        <div class="col-sm-4 col-md-4">
 
-                            <p>CIVa Database maintained by <a href="https://github.com/Draviam-lab">Draviam-lab</a></p>
-
-                            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-
-
-                        </div>
                     </div>
                 </div>
 

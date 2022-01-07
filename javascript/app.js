@@ -9,7 +9,7 @@ function ShowHideDiv() {
     dvUniprot.style.display = RUniprot.checked ? "block" : "none";
     dvFindUni.style.display = RUniprot.checked ? "block" : "none";
     d3.select("tbody").html("");
-    d3.selectAll("p").classed('noresults', true).html("");
+    d3.select("p").classed('noresults', true).html("");
 }
 //reference for the function : https://levelup.gitconnected.com/building-a-simple-website-that-outputs-results-from-a-csv-using-users-input-bfcb782ced45
 
