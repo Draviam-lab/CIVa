@@ -48,6 +48,7 @@ d3.csv("data/civ_data.csv").then(function (data)
             if (filteredGene.length === 0 && inputValueGene !=="") {
                 d3.select("p").classed('noresults', true).html("<strong>No record to match this gene symbol. Please contact to add this to the database</strong>")
             }
+            console.log(filteredGene)
             for (var k = 0; k < filteredGene.length; k++) {
                 d3.select("tbody").insert("tr").html(
                     "<td>" + [k + 1] + "</td>" +
