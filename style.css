@@ -72,6 +72,9 @@ and also iPads specifically.
      margin: auto;
 
 }
+table {
+    width:100%
+}
 #project_tagline{
 text-align: justify;
 }
