@@ -99,8 +99,7 @@ d3.csv("data/civ_data_7Jan.csv").then(function (data)
                     "<td>" + (filteredUniprot[i]['Cancer_tissues']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['AF_gnomAD']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Het_gnomAD']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['N_Hom_gnomAD']) + "</td>"
-                )}
+                    "<td>" + (filteredUniprot[i]['N_Hom_gnomAD']) + "</td>")}
 
 
         }
