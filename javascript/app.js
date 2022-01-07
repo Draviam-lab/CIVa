@@ -1,6 +1,8 @@
 function ShowHideDiv() {
-    //var gene = document.getElementById("gene");
-    //var uniprot = document.getElementById("uniprot");
+    var dvGene = document.getElementById("dvGene");
+    var dvUniprot = document.getElementById("dvUniprot");
+    var dvFindGene=document.getElementById("dvFindGene");
+    var dvFindUni=document.getElementById("dvFindUni")
 
     dvGene.style.display = RGene.checked ? "block" : "none";
     dvFindGene.style.display = RGene.checked ? "block" : "none";
@@ -30,7 +32,7 @@ d3.csv("data/civ_data_7Jan.csv").then(function (data)
             }
         })
 
-
+        d3.select("tbody").html("")
         var inputValue;
         if (document.getElementById('RGene').checked){
             inputValue=document.getElementById('RGene').value;
