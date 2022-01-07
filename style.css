@@ -99,7 +99,10 @@ h5 {
 footer p {
     color:#ffffff
 }
-
+a{
+    transition: none;
+    
+}
 
 
 
