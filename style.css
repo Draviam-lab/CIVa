@@ -74,6 +74,12 @@ text-align: justify;
 
 }
 
+.inner {
+    /*position: relative;*/
+    width: 100%;
+    padding: 20px 10px;
+    margin:0 auto
+}
 .footer-dark {
     padding:50px 0;
     color:#f0f9ff;
