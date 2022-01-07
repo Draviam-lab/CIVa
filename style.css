@@ -79,7 +79,7 @@ text-align: justify;
 
 }
 
-h3 {
+h4 {
     text-align: center;
 }
 
@@ -87,7 +87,10 @@ h3 {
     color:#ffffff;
      background: none;
 }
-
+#footer_ul {
+    color:#ffffff;
+    background: none;
+}
 footer p {
     color:#ffffff
 }
