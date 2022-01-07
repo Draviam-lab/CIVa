@@ -43,27 +43,31 @@ d3.csv("data/civ_data.csv").then(function (data)
             var inputElementGene = d3.select("#user-input-gene");
             var inputValueGene = inputElementGene.property("value").toUpperCase().trim();
             
-            var filteredChromsGene = civ.filter(civ => civ.Gene_Symbol === inputValueGene); // checks datatype
+            var filteredGene = civ.filter(civ => civ.Gene_Symbol === inputValueGene); // checks datatype
             
-            if (filteredChromsGene.length === 0 && inputValueGene !=="") {
+            if (filteredGene.length === 0 && inputValueGene !=="") {
                 d3.select("p").classed('noresults', true).html("<strong>No record to match this gene symbol. Please contact to add this to the database</strong>")
             }
-            for (var k = 0; k < filteredChromsGene.length; k++) {
+            for (var k = 0; k < filteredGene.length; k++) {
                 d3.select("tbody").insert("tr").html(
                     "<td>" + [k + 1] + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['Transcript_ID']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Het_ELGH']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Het_BiB']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Het_BiB']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Hom_ELGH']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Hom_BiB']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Hom_Birm']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Cosmic']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['Cancer_tissues']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Het_Gnomad']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['N_Hom_Gnomad']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['Allelecount_Gnomad']) + "</td>" +
-                    "<td>" + (filteredChromsGene[k]['Allelefreq_Gnomad']) + "</td>")}
+                    "<td>" + (filteredGene[k]['Transcript_ID']) + "</td>" +
+                    "<td>" + (filteredGene[k]['Protein_position']) + "</td>" +
+                    "<td>" + (filteredGene[k]['Amino_acids']) + "</td>" +
+                    "<td>" + (filteredGene[k]['AF_ELGH']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Het_ELGH']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Hom_ELGH']) + "</td>" +
+                    "<td>" + (filteredGene[k]['AF_BiB']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Het_BiB']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Hom_BiB']) + "</td>" +
+                    "<td>" + (filteredGene[k]['AF_Birm']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Het_Birm']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Hom_Birm']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Cosmic']) + "</td>" +
+                    "<td>" + (filteredGene[k]['Cancer_tissues']) + "</td>" +
+                    "<td>" + (filteredGene[k]['AF_gnomAD']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Het_gnomAD']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_Hom_gnomAD']) + "</td>")}
         }
         if (inputValue==='uniprot'){
 
@@ -79,18 +83,23 @@ d3.csv("data/civ_data.csv").then(function (data)
                 d3.select("tbody").insert("tr").html(
                     "<td>" + [i + 1] + "</td>" +
                     "<td>" + (filteredUniprot[i]['Transcript_ID']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['Protein_position']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['Amino_acids']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['AF_ELGH']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Het_ELGH']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['N_Het_BiB']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['N_Het_BiB']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_ELGH']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['AF_BiB']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['N_Het_BiB']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_BiB']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['AF_Birm']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['N_Het_Birm']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_Birm']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Cosmic']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['Cancer_tissues']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['N_Het_Gnomad']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['N_Hom_Gnomad']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['Allelecount_Gnomad']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['Allelefreq_Gnomad']) + "</td>")}
+                    "<td>" + (filteredUniprot[i]['AF_gnomAD']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['N_Het_gnomAD']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['N_Hom_gnomAD']) + "</td>"
+                )}
 
 
         }
