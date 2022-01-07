@@ -47,15 +47,15 @@ and also iPads specifically.
     td:nth-of-type(14):before { content: "Allelefreq_Gnomad"; }
 
 }
-#logo{
-    /* //width:100px;
+/*#logo{
+     //width:100px;
     // height:89px;
      //width: min(50vw, 100px);
      //position: absolute;
      //float:left;
     // top: 12pt;
-     //background-image:url(images/CIVa_Logo_black.jpg); */
- }
+     //background-image:url(images/CIVa_Logo_black.jpg);
+ }*/
  img {
      width:auto;
      max-height:100%;
