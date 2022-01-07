@@ -83,8 +83,9 @@ h3 {
     text-align: center;
 }
 
- p.footer_para {
-    color:#f2f2f2
+ #footer_para {
+    color:#ffffff;
+     background: none;
 }
 
 
