@@ -57,6 +57,7 @@ d3.csv("data/civ_data_7Jan.csv").then(function (data)
                     "<td>" + (filteredGene[k]['Transcript_ID']) + "</td>" +
                     "<td>" + (filteredGene[k]['Protein_position']) + "</td>" +
                     "<td>" + (filteredGene[k]['Amino_acids']) + "</td>" +
+                    "<td>" + (filteredGene[k]['Consequence']) + "</td>" +
                     "<td>" + (filteredGene[k]['AF_ELGH']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Het_ELGH']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Hom_ELGH']) + "</td>" +
@@ -88,6 +89,7 @@ d3.csv("data/civ_data_7Jan.csv").then(function (data)
                     "<td>" + (filteredUniprot[i]['Transcript_ID']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['Protein_position']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['Amino_acids']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['Consequence']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['AF_ELGH']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Het_ELGH']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_ELGH']) + "</td>" +
