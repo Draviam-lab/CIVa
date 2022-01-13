@@ -13,7 +13,7 @@ function ShowHideDiv() {
 }
 //reference for the function : https://levelup.gitconnected.com/building-a-simple-website-that-outputs-results-from-a-csv-using-users-input-bfcb782ced45
 
-d3.csv("data/civ_data_13Jan.csv").then(function (data)
+d3.csv("data/civ_data_14Jan.csv").then(function (data)
     {
 
         var civ = data;
