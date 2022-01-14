@@ -32,7 +32,7 @@ d3.csv("data/civ_data_14Jan.csv").then(function (data)
             }
         })
 
-        d3.select("tbody").html("")
+        d3.select("tbody").html("");
         var inputValue;
         if (document.getElementById('RGene').checked){
             inputValue=document.getElementById('RGene').value;
