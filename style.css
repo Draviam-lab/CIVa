@@ -32,7 +32,7 @@ and also iPads specifically.
     Label the data
     */
 
-    td:nth-of-type(1):before { content:"Record Number"; }
+    td:nth-of-type(1):before { content:"Variation Number"; }
     td:nth-of-type(2):before { content: "Transcript ID"; }
     td:nth-of-type(3):before { content: "Protein Position"; }
     td:nth-of-type(4):before { content: "Amino Acids"; }
@@ -95,6 +95,7 @@ h5 {
 #footer_ul {
     color:#ffffff;
     background: none;
+    font-size: 15px;
     /*text-align: justify;*/
 }
 footer p {
