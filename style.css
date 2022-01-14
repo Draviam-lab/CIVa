@@ -46,7 +46,7 @@ and also iPads specifically.
     td:nth-of-type(12):before { content: "AF_Birm"; }
     td:nth-of-type(13):before { content: "N_Het_Birm"; }
     td:nth-of-type(14):before { content: "N_Hom_Birm"; }
-    td:nth-of-type(15):before { content: "N_Cosmic"; }
+    td:nth-of-type(15):before { content: "N_COSMIC"; }
     td:nth-of-type(16):before { content: "Cancer tissues"; }
     td:nth-of-type(17):before { content: "AF_gnomAD"; }
     td:nth-of-type(18):before { content: "N_Het_gnomAD"; }
