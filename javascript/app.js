@@ -68,7 +68,7 @@ d3.csv("data/civ_data_14Jan.csv").then(function (data)
                     "<td>" + (filteredGene[k]['AF_Birm']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Het_Birm']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Hom_Birm']) + "</td>" +
-                    "<td>" + (filteredGene[k]['N_Cosmic']) + "</td>" +
+                    "<td>" + (filteredGene[k]['N_COSMIC']) + "</td>" +
                     "<td>" + (filteredGene[k]['Cancer_tissues']) + "</td>" +
                     "<td>" + (filteredGene[k]['AF_gnomAD']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Het_gnomAD']) + "</td>" +
@@ -100,7 +100,7 @@ d3.csv("data/civ_data_14Jan.csv").then(function (data)
                     "<td>" + (filteredUniprot[i]['AF_Birm']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Het_Birm']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_Birm']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['N_Cosmic']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['N_COSMIC']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['Cancer_tissues']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['AF_gnomAD']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Het_gnomAD']) + "</td>" +
