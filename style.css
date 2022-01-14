@@ -91,17 +91,18 @@ h5 {
  #footer_para {
     color:#ffffff;
      background: none;
+     font-size: 12px;
 }
 #footer_ul {
     color:#ffffff;
     background: none;
-    font-size: 10px;
+    font-size: 12px;
     /*text-align: justify;*/
 }
 #footer_p {
     color:#ffffff;
     background: none;
-    font-size: 10px;
+    font-size: 12px;
 }
 a{
     transition: none; /* stops disappearing footer  */
