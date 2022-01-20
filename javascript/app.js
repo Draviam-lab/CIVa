@@ -51,7 +51,7 @@ d3.csv("data/civ_data_20Jan.csv").then(function (data)
             if (filteredGene.length === 0 && inputValueGene !=="") {
                 d3.select("p").classed('noresults', true).html("<strong>No record to match this gene symbol. Please contact to add this to the database</strong>")
             }
-            console.log(filteredGene)
+            //console.log(filteredGene)
             for (var k = 0; k < filteredGene.length; k++) {
                 d3.select("tbody").insert("tr").html(
                     "<td>" + [k + 1] + "</td>" +
@@ -69,7 +69,7 @@ d3.csv("data/civ_data_20Jan.csv").then(function (data)
                     "<td>" + (filteredGene[k]['N_Het_Birm']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Hom_Birm']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_COSMIC']) + "</td>" +
-                    "<td>" + (filteredGene[k]['Cancer_tissues']) + "</td>" +
+                    "<td>" + (filteredGene[k]['Cancer_tissues_COSMIC']) + "</td>" +
                     "<td>" + (filteredGene[k]['AF_gnomAD']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Het_gnomAD']) + "</td>" +
                     "<td>" + (filteredGene[k]['N_Hom_gnomAD']) + "</td>")}
@@ -101,7 +101,7 @@ d3.csv("data/civ_data_20Jan.csv").then(function (data)
                     "<td>" + (filteredUniprot[i]['N_Het_Birm']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_Birm']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_COSMIC']) + "</td>" +
-                    "<td>" + (filteredUniprot[i]['Cancer_tissues']) + "</td>" +
+                    "<td>" + (filteredUniprot[i]['Cancer_tissues_COSMIC']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['AF_gnomAD']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Het_gnomAD']) + "</td>" +
                     "<td>" + (filteredUniprot[i]['N_Hom_gnomAD']) + "</td>")}
